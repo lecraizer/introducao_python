@@ -2,3 +2,32 @@
 _next/
 _next_scripts/
 _duplicated/
+
+# Arquivos compilados
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ambientes virtuais
+.venv/
+venv/
+ENV/
+env/
+
+# Configurações locais
+*.env
+*.local
+
+# Cache e logs
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+
+# Ferramentas comuns
+.ipynb_checkpoints
+.pytest_cache/
+.mypy_cache/
+.pyre/
+.dmypy.json

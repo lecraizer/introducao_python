@@ -1,0 +1,5 @@
+Jogos Vorazes: Descrição Básica
+
+Nos Jogos Vorazes, cada jogador participa de um confronto onde precisa lutar pela sobrevivência. Os jogadores começam com 99 pontos de vida (HP) e podem escolher entre atacar ou defender em cada rodada. A cada jogada, recebem como parâmetro sua vida atual (HP), a rodada em andamento e o número de jogadores restantes na partida.
+
+Os ataques causam dano aleatório a um alvo, enquanto a defesa reduz o impacto de possíveis ataques. O objetivo é ser o último sobrevivente, vencendo assim os Jogos Vorazes. A competição segue rodada após rodada até restar apenas um jogador de pé.

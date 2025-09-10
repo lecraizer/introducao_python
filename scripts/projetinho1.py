@@ -52,22 +52,23 @@ def menu():
         print("0. Sair")
 
         escolha = input("Escolha uma opção (1-4): ")
-
-        if escolha == '1':
-            titulo = input("Digite o título do livro: ")
-            autor = input("Digite o autor do livro: ")
-            adicionar_livro(livros, titulo, autor)
-        elif escolha == '2':
-            listar_livros(livros)
-        elif escolha == '3':
-            titulo = input("Digite o título do livro que deseja buscar: ")
-            buscar_livro(livros, titulo)
-        elif escolha == '4':
-            print("Digite o autor do livro que deseja buscar: ")
-        elif escolha == '0':
-            print("Saindo do programa...")
-            break
-        else:
-            print("Opção inválida. Por favor, escolha novamente.")
+        match escolha:
+            case '1':
+                titulo = input("Digite o título do livro: ")
+                autor = input("Digite o autor do livro: ")
+                adicionar_livro(livros, titulo, autor)
+            case '2':
+                listar_livros(livros)
+            case '3':
+                titulo = input("Digite o título do livro que deseja buscar: ")
+                buscar_livro(livros, titulo)
+            case '4':
+                autor = input("Digite o autor do livro que deseja buscar: ")
+                buscar_autor(livros, autor)
+            case '0':
+                print("Saindo do programa...")
+                break
+            case _:
+                print("Opção inválida. Por favor, escolha novamente.")
 
 menu()
